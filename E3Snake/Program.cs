@@ -1,5 +1,4 @@
-﻿using ConnectToE3;
-using e3;
+﻿using e3;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -15,7 +14,6 @@ namespace ConsoleSnake
     // Сделать класс символ и задать ему методы
     class Program
     {
-        private static AppConnect e3App = new AppConnect();
         public static e3Application App;
         public static e3Job Prj = null;	// объект проекта
         public static e3Sheet Sheet = null;	// объект 
@@ -29,7 +27,7 @@ namespace ConsoleSnake
         static void Main()
         {
             // Подключаем E3
-            App = e3App.ToE3();
+            App = new e3Application(); //Приложение  
             App?.PutInfo(0, "Starting The Snake!");
 
             Prj     = App?.CreateJobObject();
