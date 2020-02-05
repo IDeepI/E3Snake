@@ -9,14 +9,11 @@ using System.Windows;
 
 namespace ConsoleSnake
 {
-    // Сделать класс змея и задать ей методы
-    // Метод движения
-
-    // Сделать класс символ и задать ему методы
+  
     class Program
     {
         private static AppConnect e3App = new AppConnect();
-        public static e3Application App;
+        public static e3Application App;// объект приложения
         public static e3Job Prj = null;	// объект проекта
         public static e3Sheet Sheet = null;	// объект 
         public static e3Graph Graph = null;	// объект 
